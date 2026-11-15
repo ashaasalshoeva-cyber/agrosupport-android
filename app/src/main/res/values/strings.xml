@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AgroSupport</string>
+    <string name="offline_banner">No internet connection: the map and live data are unavailable.\nНет интернета: карта и данные недоступны.</string>
+    <string name="retry">Retry / Повторить</string>
+    <string name="error_title">The page could not be loaded\nСтраница не загрузилась</string>
+</resources>

@@ -1,0 +1,23 @@
+/* AgroSupport dark theme v2: same look as the light theme (soft green, visible photo, tinted fields),
+   in deep-green tones instead of near-black. Remove this file (and its <link>) to return to the old dark theme. */
+:root[data-theme=dark]{
+ --bg:rgb(11,58,52);
+ --bg-bar:rgba(10,56,50,.96);          /* top and bottom bars */
+ --hero-solid:16,72,64;                 /* welcome / catalogue / crop headers */
+ --card-solid:16,72,64;                 /* all cards */
+ --glass-rgb:16,72,64;
+ --field:rgba(224,255,194,.12);         /* inputs: lighter than the card, like the light theme */
+ --warn-bg:rgba(123,91,67,.42);         /* notice banners: tan, like the light theme */
+ --panel:rgba(12,62,55,.96);
+ --dark-wash:.5;                        /* green veil over the background photo (light theme uses a white one) */
+}
+:root[data-theme=dark] .bg-photo:after{background:rgba(8,56,50,var(--dark-wash))}
+:root[data-theme=dark] .informational-banner{background:rgba(123,91,67,.42);border-color:var(--clay)}
+:root[data-theme=dark] .tool-aside,
+:root[data-theme=dark] .facts-grid>div,
+:root[data-theme=dark] .guide-grid article,
+:root[data-theme=dark] .input-card{background:rgb(var(--card-solid))}
+:root[data-theme=dark] #portal select,
+:root[data-theme=dark] #portal input,
+:root[data-theme=dark] #portal textarea{background:var(--field);border-color:var(--line-strong)}
+:root[data-theme=dark] #portal option{background:rgb(11,58,52);color:var(--lime)}
